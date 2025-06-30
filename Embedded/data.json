@@ -1,0 +1,2054 @@
+[
+    {
+        "名称": "BCM认证状态BCM_AuthStatus ",
+        "参数": [
+            "0x0: BCM钥匙认证已成功/ BCM-Key validation success",
+            "0x5F: BCM钥匙认证失败/ BCM-Key validation failure",
+            "0xF0: Busy，BCM正在进行钥匙认证/ BCM is processing the key-validation",
+            "0xF5: Busy，BCM正在计算Response/ BCM is processing the encryption",
+            "0xFF: BCM 初始化状态（未通过 EOL 写入 SK或常量码） /BCM initialization status"
+        ]
+    },
+    {
+        "名称": "左选择按键SWC_LEFT_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "右选择按键SWC_RIGHT_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "页面上翻SWC_PageUP_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "页面下翻SWC_PageDown_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "确认按键SWC_OK_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "接听按键SWC_Answer_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "挂断按键SWC_HangUp_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "右侧盲区影像按键SWC_SVC_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "音量增加按键SWC_VolumeUp_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Short Press",
+            "0x2: Long Press（≥1秒）",
+            "0x3: INVALID"
+        ]
+    },
+    {
+        "名称": "音量减少按键SWC_VolumeDown_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Short Press",
+            "0x2: Long Press（≥1秒）",
+            "0x3: INVALID"
+        ]
+    },
+    {
+        "名称": "模式选择按键SWC_MODE_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "智能语音交互按键SWC_VoiceButton_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "巡航启动/关闭按键SWC_CRUISE_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "解除车速设定按键SWC_CANCELspeed_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "车速设定/减速按键SWC_SETspeed_Dec_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Short Press",
+            "0x2: Long Press（≥1秒）",
+            "0x3: INVALID"
+        ]
+    },
+    {
+        "名称": "车速恢复/加速按键SWC_RESspeed_Inc_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Short Press",
+            "0x2: Long Press（≥1秒）",
+            "0x3: INVALID"
+        ]
+    },
+    {
+        "名称": "向前跳转按键SWC_FORWARD_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "向后跳转按键SWC_BACKWARD_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "车距调节按键SWC_DISTANCEad_Key ",
+        "参数": [
+            "0x0: No press",
+            "0x1: Press",
+            "0x2: INVALID",
+            "0x3: RESERVED"
+        ]
+    },
+    {
+        "名称": "The signal indicate CCO SwtichGW_CCO_Switch ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Deactivate",
+            "0x2: Activate"
+        ]
+    },
+    {
+        "名称": "The signal indicate ESPoff SwtichGW_ESPoff_Switch ",
+        "参数": [
+            "0x0: No Pressed",
+            "0x1: Press less than 3s",
+            "0x2: Presse 3~10s",
+            "0x3: For VGV press the Soft Button",
+            "0x4: Reserved",
+            "0x5: Press more than 10s"
+        ]
+    },
+    {
+        "名称": "The signal indicate TAB SwtichGW_TAB_Switch ",
+        "参数": [
+            "0x0: No Pressed",
+            "0x1: Pressed",
+            "0x2: Reserved",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "The signal indicate HDC SwtichGW_HdcSwitch ",
+        "参数": [
+            "0x0: No Pressed",
+            "0x1: Pressed",
+            "0x2: Reserved",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "BCM与TBOX认证结果BCM_TBOX_Release ",
+        "参数": [
+            "0x0: 认证正在进行-authentication is been  processed",
+            "0x1: 防盗认证失败-authenticationfailure",
+            "0x2: 防盗认证成功-authentication success",
+            "0x3: 保留-reserved"
+        ]
+    },
+    {
+        "名称": "驾驶模式DMS_DrivingMode ",
+        "参数": [
+            "0x0: normal mode",
+            "0x1: sport mode",
+            "0x2: economy mode",
+            "0x3: winter mode",
+            "0x4: sand mode",
+            "0x5: mud mode",
+            "0x6: rock mode",
+            "0x7: reserved"
+        ]
+    },
+    {
+        "名称": "后雾灯工作状态BCM_RearFoglampStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "前雾灯工作状态BCM_FrontFoglampStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "远光灯工作状态BCM_HighBeamStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "近光灯工作状态BCM_LowBeamStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "前洗涤工作状态BCM_FrontWashStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "位置灯工作状态BCM_PositionLampStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "右转向灯信号BCM_TurnIndicatorRight ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "左转向灯信号BCM_TurnIndicatorLeft ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "自动大灯模式开启状态BCM_AutoHeadlightModeSts ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON"
+        ]
+    },
+    {
+        "名称": "天窗状态BCM_SunroofStatus ",
+        "参数": [
+            "0x0: fully up（完全起翘状态）",
+            "0x1: tilt stop（关闭位和起翘位之间）",
+            "0x2: ATS in tilt area（关闭位和起翘位之间由于防夹停止）",
+            "0x3: fully close（完全关闭）",
+            "0x4: ATS in slide area（滑动关闭防夹）",
+            "0x5: slide stop（完全打开和完全关闭之间状态）",
+            "0x6: fully open（完全打开）",
+            "0x7: Degrade Mode"
+        ]
+    },
+    {
+        "名称": "右后门状态BCM_RightRearDoorStatus ",
+        "参数": [
+            "0x0: Close",
+            "0x1: Open"
+        ]
+    },
+    {
+        "名称": "左后门状态BCM_LeftRearDoorStatus ",
+        "参数": [
+            "0x0: Close",
+            "0x1: Open"
+        ]
+    },
+    {
+        "名称": "右前门状态BCM_PassengerDoorStatus ",
+        "参数": [
+            "0x0: Close",
+            "0x1: Open"
+        ]
+    },
+    {
+        "名称": "左前门状态BCM_DriverDoorStatus ",
+        "参数": [
+            "0x0: Close",
+            "0x1: Open"
+        ]
+    },
+    {
+        "名称": "倒车灯工作状态BCM_ReverselampStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "驾驶侧门锁状态信号BCM_DriverDoorLockStatus ",
+        "参数": [
+            "0x0: Lock",
+            "0x1: Unlock",
+            "0x2: Not used",
+            "0x3: Error"
+        ]
+    },
+    {
+        "名称": "后除霜工作状态BCM_RearDefrosterstatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "蜂鸣器报警模式BCM_BuzzerWarningMode ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: FollwoMeLight",
+            "0x2: LockSpeedSetOFF",
+            "0x3: LockSpeedSetON",
+            "0x4: KeyLearnSuccess",
+            "0x5: DriverDoorUnlockModeSetOFF",
+            "0x6: DriverDoorUnlockModeSetON",
+            "0x7: Reserved",
+            "0xF: Reserved",
+            "0x10: LightON",
+            "0x11: RoofWinOpen",
+            "0x12: KeyInCarAlarm",
+            "0x13: KeyUndetectedAlarm",
+            "0x14: ExitActiveArm",
+            "0x15: DoorOpenLock",
+            "0x16: KeyLowBat",
+            "0x17: PassengerSeatBeltWarning",
+            "0x18: Key In Signal",
+            "0x19: DriverSeatBeltWarning",
+            "0x1A: Reserved",
+            "0x1B: DoorOpen",
+            "0x1C: PowerManagementNotice",
+            "0x1D: RearWiperUnlockWarning",
+            "0x1F: Reserved"
+        ]
+    },
+    {
+        "名称": "制动灯工作状态BCM_BrakeLightStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Error（故障）"
+        ]
+    },
+    {
+        "名称": "电子转向柱锁故障BCM_MT_ESCL_Error ",
+        "参数": [
+            "0x0: No error",
+            "0x1: Error"
+        ]
+    },
+    {
+        "名称": "紧急报警灯状态BCM_emergencylightstatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: Not used",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "光传感器故障信号BCM_Statuslowbeam ",
+        "参数": [
+            "0x0: NO error",
+            "0x1: Error"
+        ]
+    },
+    {
+        "名称": "Park brake statusBCM_MT_ParkBrakeSts ",
+        "参数": [
+            "0x0: Off（手刹开关断开）",
+            "0x1: On（手刹开关接通）",
+            "0x2: Reserved",
+            "0x3: Not available"
+        ]
+    },
+    {
+        "名称": "前雨刮工作状态BCM_FrontWiperStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: Slow Wiping",
+            "0x2: Fast wiping",
+            "0x3: Interval Wiping",
+            "0x4: Error",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "发动机舱盖状态BCM_HoodStatus ",
+        "参数": [
+            "0x0: Close",
+            "0x1: Open"
+        ]
+    },
+    {
+        "名称": "警戒状态信息BCM_KeyAlarmStatus ",
+        "参数": [
+            "0x0: Disarmed",
+            "0x1: Prearmed",
+            "0x2: Armed",
+            "0x3: Activated"
+        ]
+    },
+    {
+        "名称": "雨量传感器故障BCM_Statusrainsensor ",
+        "参数": [
+            "0x0: NO error",
+            "0x1: Error"
+        ]
+    },
+    {
+        "名称": "温度值轮胎位置BCM_TirePosition ",
+        "参数": [
+            "0x0: No any sensor；",
+            "0x1: Left Front tire.",
+            "0x2: Right Front tire；",
+            "0x3: Right Rear tire.",
+            "0x4: Left Rear tire；",
+            "0x5~0x7: reseved."
+        ]
+    },
+    {
+        "名称": "左后轮胎温度报警BCM_LRTemperatureWarning ",
+        "参数": [
+            "0x0: No temperature warning；",
+            "0x1: Temperature warning"
+        ]
+    },
+    {
+        "名称": "右后轮胎温度报警BCM_RRTemperatureWarning ",
+        "参数": [
+            "0x0: No temperature warning；",
+            "0x1: Temperature warning"
+        ]
+    },
+    {
+        "名称": "右前轮胎温度报警BCM_RFTemperatureWarning ",
+        "参数": [
+            "0x0: No temperature warning；",
+            "0x1: Temperature warning"
+        ]
+    },
+    {
+        "名称": "左前轮胎温度报警BCM_LFTemperatureWarning ",
+        "参数": [
+            "0x0: No temperature warning；",
+            "0x1: Temperature warning"
+        ]
+    },
+    {
+        "名称": "右前轮胎压力报警BCM_RFPressureWarning ",
+        "参数": [
+            "0x0: No warning；",
+            "0x1: High pressure warning.",
+            "0x2: Low pressure warning；",
+            "0x3: Quik leakage.",
+            "0x4: Lost Sensor；",
+            "0x5: Sensor battery low",
+            "0x6: Sensor failure；",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "左前轮胎压力报警BCM_LFPressureWarning ",
+        "参数": [
+            "0x0: No warning；",
+            "0x1: High pressure warning.",
+            "0x2: Low pressure warning；",
+            "0x3: Quik leakage.",
+            "0x4: Lost Sensor；",
+            "0x5: Sensor battery low",
+            "0x6: Sensor failure；",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "胎压信号状态BCM_TirePresureSignalStatus ",
+        "参数": [
+            "0x0: reliable signal；",
+            "0x1: unreliable signal"
+        ]
+    },
+    {
+        "名称": "系统故障报警BCM_SystemFailureWarning ",
+        "参数": [
+            "0x0: No any error；",
+            "0x1: System error."
+        ]
+    },
+    {
+        "名称": "左后轮胎压力报警BCM_LRPressureWarning ",
+        "参数": [
+            "0x0: No warning；",
+            "0x1: High pressure warning.",
+            "0x2: Low pressure warning；",
+            "0x3: Quik leakage.",
+            "0x4: Lost Sensor；",
+            "0x5: Sensor battery low",
+            "0x6: Sensor failure；",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "右后轮胎压力报警BCM_RRPressureWarning ",
+        "参数": [
+            "0x0: No warning；",
+            "0x1: High pressure warning.",
+            "0x2: Low pressure warning；",
+            "0x3: Quik leakage.",
+            "0x4: Lost Sensor；",
+            "0x5: Sensor battery low",
+            "0x6: Sensor failure；",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "认证失败，EMSRelease=01时，如果此时BCM又收到驾驶员起动请求，在BCM检测起动条件允许后，BCM需要通过网络发送事件信号给EMS，触发EMS再次重新开始认证。EMS收到该触发信号后，重新发起认证流程PEPS_ReAuthRequest ",
+        "参数": [
+            "0x0: no ReAuthRequest",
+            "0x1: ReAuthentication Triger active"
+        ]
+    },
+    {
+        "名称": "启动控制信号PEPS_StartControlsignal ",
+        "参数": [
+            "0x0: No Request；",
+            "0x1: Startup Start；",
+            "0x2: Startup Stop；",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程启动控制信号PEPS_RemoteStartControlsignal ",
+        "参数": [
+            "0x0: No Request；",
+            "0x1: Remote Startup Start；",
+            "0x2: Remote Startup Stop；",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程限制发动机转速TBOX_RemoteLimitEngine ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Limit Enginie Speed（限制发动机转速）",
+            "0x2: Cancel Speed Limit（取消发动机转速限制）",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程解锁反馈BCM_RmoteUnLockFeedback ",
+        "参数": [
+            "0x0: NoFeedback",
+            "0x1: 四门解锁成功",
+            "0x2: 非OFF档",
+            "0x3: 热保护",
+            "0x4~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "远程闭锁反馈BCM_RmoteLockeFeedback ",
+        "参数": [
+            "0x0: NoFeedback",
+            "0x1: 四门闭锁成功",
+            "0x2: 车门未关",
+            "0x3: 热保护",
+            "0x4: 非OFF档",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "远程寻车反馈BCM_CarRemindFeedback ",
+        "参数": [
+            "0x0: NoFeedback；",
+            "0x1: 成功；",
+            "0x2: 非OFF档；",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "防夹报警信号BCM_APActiveAlarmSignal ",
+        "参数": [
+            "0x0: No Alarm；",
+            "0x1: DriverWindow；",
+            "0x2: PassengerWindow；",
+            "0x3: LeftRearWindow；",
+            "0x4: RightRearWindow；",
+            "0x5: Sunroof；",
+            "0x6~0xF: Reserved"
+        ]
+    },
+    {
+        "名称": "远程上/下电反馈BCM_RemoteIGNOnFeedback ",
+        "参数": [
+            "0x0: 无反馈",
+            "0x1: 远程上电成功",
+            "0x2: 蓄电池电压不足",
+            "0x3: 整车电源不在OFF档",
+            "0x4: 车速不为0",
+            "0x5: 整车不在P档",
+            "0x6: 整车EPB未夹紧",
+            "0x7: 远程下电成功",
+            "0x8: 远程上电失败",
+            "0x9~0xF: Reserved"
+        ]
+    },
+    {
+        "名称": "远程控制车窗反馈BCM_RemoteWindowFeedback ",
+        "参数": [
+            "0x0: NoFeedback；",
+            "0x1: Remote Close Success；",
+            "0x2: Remote Open Success；",
+            "0x3: 非OFF档；",
+            "0x4: 车窗未学习；",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "智能驾驶界面调取请求信号BCM_ADASswitchstatus ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Request",
+            "0x2: Reserved",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "左前胎压未学习BCM_LFPressureNotLearn ",
+        "参数": [
+            "0x0: learn",
+            "0x1: Not learn"
+        ]
+    },
+    {
+        "名称": "右前胎压未学习BCM_RFPressureNotLearn ",
+        "参数": [
+            "0x0: learn",
+            "0x1: Not learn"
+        ]
+    },
+    {
+        "名称": "左后胎压未学习BCM_RRPressureNotLearn ",
+        "参数": [
+            "0x0: learn",
+            "0x1: Not learn"
+        ]
+    },
+    {
+        "名称": "右后胎压未学习BCM_LRPressureNotLearn ",
+        "参数": [
+            "0x0: learn",
+            "0x1: Not learn"
+        ]
+    },
+    {
+        "名称": "闭锁关车窗天窗设置状态BCM_LockAutoClsWinSRSetSts ",
+        "参数": [
+            "0x0: inactive",
+            "0x1: on",
+            "0x2: off",
+            "0x3: reserved"
+        ]
+    },
+    {
+        "名称": "锁车外视镜自动折叠设置状态BCM_MirrorAutoFoldSetStatus ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1: Auto Fold",
+            "0x2: Not Auto Fold",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "主驾单独解锁设置状态BCM_DriveDoorUnlockSetSts ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: off",
+            "0x2: on",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "伴我回家灯光设置状态信号BCM_FollowMeHomeLightSetSts ",
+        "参数": [
+            "0x0: inactive",
+            "0x1: OFF",
+            "0x2: 15 s",
+            "0x3: 30 s",
+            "0x4: 60 s",
+            "0x5: 120s",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "解闭锁反馈方式设置（灯光+声音，仅灯光）HU_RemoteControlSwtichSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: Light and Sound",
+            "0x2: Only Light",
+            "0x3~0x6: Reserved",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "雨量感应天窗设置状态（设置开启关闭）BCM_RainCtrlSRSetSts ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: off",
+            "0x2: on",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "迎宾灯设置反馈BCM_BreathingLightSet_FeedBack ",
+        "参数": [
+            "0x0: Inactive",
+            "0x1: On",
+            "0x2: Off",
+            "0x3: Reserve"
+        ]
+    },
+    {
+        "名称": "驻车雷达开关状态BCM_PASSwitchStatus ",
+        "参数": [
+            "0x0: Not pressed（开关断开）",
+            "0x1: Pressed（开关高电平）",
+            "0x2: Reversed",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "危急报警开关状态BCM_emergencyswitchSt ",
+        "参数": [
+            "0x0: not pressed",
+            "0x1: pressed",
+            "0x2~0x3: not used"
+        ]
+    },
+    {
+        "名称": "雨刮维修模式信号HU_WiperServiceReq ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "光源开启关闭信号反馈ALC_Switch_FeedBack ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON"
+        ]
+    },
+    {
+        "名称": "光源亮度信号反馈TheaterDimmingBrightness_FeedBack ",
+        "参数": [
+            "0x0: 亮度等级1",
+            "0x1: 亮度等级2",
+            "0x2: 亮度等级3",
+            "0x3: 亮度等级4",
+            "0x4: 亮度等级5",
+            "0x5: invalid",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "功能效果模式反馈（越野版）SetMode_Offroad_FeedBack ",
+        "参数": [
+            "0x0: 关闭",
+            "0x1: 律动",
+            "0x2: 运动",
+            "0x3: 节奏",
+            "0x4: 流光",
+            "0x5: 动感",
+            "0x6: invalid",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "光源颜色信号反馈TheaterDimmingColor_FeedBack ",
+        "参数": [
+            "0x0: invalid",
+            "0x1~0x40: 1号颜色~64号颜色",
+            "0x41~0xFF: Reserved"
+        ]
+    },
+    {
+        "名称": "功能效果模式反馈（乘用版）SetMode_Passenger_FeedBack ",
+        "参数": [
+            "0x0: 固定",
+            "0x1: 呼吸",
+            "0x2: 循环",
+            "0x3: 关联",
+            "0x4: invalid",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "调光速度等级反馈（乘用版）FlashingSpeedLevel_FeedBack ",
+        "参数": [
+            "0x0: 速度等级1",
+            "0x1: 速度等级2",
+            "0x2: 速度等级3",
+            "0x3: 速度等级4",
+            "0x4: 速度等级5",
+            "0x5: invalid",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "电源分配状态信号有效指示位PEPS_PowerDistributionStatusValid ",
+        "参数": [
+            "0x0: Not avaliable",
+            "0x1: Invalid",
+            "0x2: Valid",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "智能钥匙电池状态PEPS_KeyBatteryStatus ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: EXchangeKeyBattery（仪表显示钥匙馈电，请更换电池）"
+        ]
+    },
+    {
+        "名称": "智能钥匙位置状态PEPS_KeyPositionStatus ",
+        "参数": [
+            "0x0: 未探测到钥匙",
+            "0x1: 钥匙在车内；",
+            "0x2: 钥匙在左前门激活区；",
+            "0x3: 钥匙在右前门激活区",
+            "0x4~0x6: Reserved",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "未检测到钥匙报警信号PEPS_KeyUndetectedAlarmSignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: ON"
+        ]
+    },
+    {
+        "名称": "钥匙在车内报警信号PEPS_KeyInCarAlarmSignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: ON"
+        ]
+    },
+    {
+        "名称": "远程主驾座椅控制请求TBOX_DrvSeatReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: OFF",
+            "0x2: 加热Level 1",
+            "0x3: 加热Level 2（默认加热等级）",
+            "0x4: 加热Level 3",
+            "0x5: 通风Level 1",
+            "0x6: 通风Level 2（默认通风等级）",
+            "0x7: 通风Level 3"
+        ]
+    },
+    {
+        "名称": "远程副驾座椅控制请求TBOX_PassSeatReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: OFF",
+            "0x2: 加热Level 1",
+            "0x3: 加热Level 2（默认加热等级）",
+            "0x4: 加热Level 3",
+            "0x5: 通风Level 1",
+            "0x6: 通风Level 2（默认通风等级）",
+            "0x7: 通风Level 3"
+        ]
+    },
+    {
+        "名称": "启动时档位报警信号PEPS_UnallowStartSignal_Not_PN ",
+        "参数": [
+            "0x0: Inactive",
+            "0x1: 未在PN档（AT车型）",
+            "0x2: 未在N档（MT车型）",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "启动方式提示信号PEPS_StartIndicatorSignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: 请踩下制动踏板提示（AT车型）",
+            "0x2: 请踩下离合器踏板提示（MT车型）",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "IMMO认证失败报警信号PEPS_IMMOFailedAlarmsignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: IMMO与EMS认证失败"
+        ]
+    },
+    {
+        "名称": "钥匙认证失败报警信号PEPS_RemoteFailedAlarmSignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: 钥匙认证失败"
+        ]
+    },
+    {
+        "名称": "一键启动按钮状态信号PEPS_StartupButtonSignal ",
+        "参数": [
+            "0x0: OFF；",
+            "0x1: ON；",
+            "0x2: Error；",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "钥匙学习成功信号PEPS_KeyLearningSignal ",
+        "参数": [
+            "0x0: Inactive；非学习状态；",
+            "0x1: Start；学习中",
+            "0x2: Success；成功；",
+            "0x3: Failed；失败"
+        ]
+    },
+    {
+        "名称": "电源分配状态信号PEPS_PowerDistributionStatus ",
+        "参数": [
+            "0x0: default；",
+            "0x1: OFF；",
+            "0x2: ACC；",
+            "0x3: ON；",
+            "0x4: Start；",
+            "0x5~0x7: reserved."
+        ]
+    },
+    {
+        "名称": "远程启动反馈PEPS_RemoteStartFeedback ",
+        "参数": [
+            "0x0: 无反馈；",
+            "0x1: 启动成功；",
+            "0x2: Reserved；",
+            "0x3: 整车电量不足；",
+            "0x4: 车门或引擎盖未关闭；",
+            "0x5: 遥控钥匙在车内；",
+            "0x6: 防盗激活；",
+            "0x7: 紧急报警灯光激活；",
+            "0x8: 整车不在P档（AT）或整车不在空档（MT）；",
+            "0x9: 车速不为0；",
+            "0xA: 发动机已运行；",
+            "0xB: 电子手刹未夹紧；",
+            "0xC: 油量不足（EV车为电量不足）",
+            "0xD: 启动系统故障；",
+            "0xE: 发动机机油压力过低；",
+            "0xF: 发动机冷却液温度过高；",
+            "0x10: 发动机故障；（EV车为三电系统故障）",
+            "0x11: 运行计时超时正常熄火；",
+            "0x12: 环境温度过低；",
+            "0x13: 周边防盗未处于“设防状态”",
+            "0x14: 远程启动停止；",
+            "0x15: 蓄电池电量充足无需补电（EV车使用）",
+            "0x16~0x1F: Reserved"
+        ]
+    },
+    {
+        "名称": "远程启动状态信号PEPS_RemoteStartSts ",
+        "参数": [
+            "0x0: Not Remote Start Status；",
+            "0x1: Remote Start Status；",
+            "0x2: Reserved；",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "发动机禁止和限制反馈结果PEPS_EngineInhibitFeedback ",
+        "参数": [
+            "0x0: Not Inhibit Or Limit（发动机没有被禁止或限制）",
+            "0x1: Inhibit（发动机禁止启动）",
+            "0x2: Engine Speed Limited（发动机转速被限制）",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "IMMO认证反馈PEPS_ImmoFeedback ",
+        "参数": [
+            "0x0: Inactive；非认证状态；",
+            "0x1: Authenticating；认证中",
+            "0x2: Success；成功；",
+            "0x3: Failed；失败"
+        ]
+    },
+    {
+        "名称": "下电档位报警信号PEPS_PowerOff_NotPN_AlarmSignal ",
+        "参数": [
+            "0x0: Inactive；",
+            "0x1: NOT PN；"
+        ]
+    },
+    {
+        "名称": "钥匙认证状态PEPS_KeyAuthenticationStatus ",
+        "参数": [
+            "0x0: Inactive；；非认证状态；",
+            "0x1: start，认证中",
+            "0x2: Success，成功；",
+            "0x3: failed，失败"
+        ]
+    },
+    {
+        "名称": "温度请求信号TBOX_ACTempValueReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1~0x21: 17°-33°",
+            "0x22~0x3F: Reserved"
+        ]
+    },
+    {
+        "名称": "PEPS系统故障PEPS_PEPSFailStatus ",
+        "参数": [
+            "0x0: No Error",
+            "0x1: Error"
+        ]
+    },
+    {
+        "名称": "禁止换挡PEPS_ShiftForbidRq ",
+        "参数": [
+            "0x0: 不禁止；",
+            "0x1: 禁止换挡"
+        ]
+    },
+    {
+        "名称": "远程空调开启及关闭请求TBOX_ACReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: OFF Request",
+            "0x2: ON Request",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "货箱门锁状态信号IBCM_TrunklockStatus ",
+        "参数": [
+            "0x0: Lock",
+            "0x1: Unlock"
+        ]
+    },
+    {
+        "名称": "WUSGW_BDCAN_WUS ",
+        "参数": [
+            "0x0: defaultValue",
+            "0x1: NM PDU Received",
+            "0x2: KL15On",
+            "0x3~0xFF: Reserved"
+        ]
+    },
+    {
+        "名称": "空调ON/OFF状态Air_Conditioner_ON_Status ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: reserved",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "空调Auto状态Air_Conditioner_Auto_Status ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON",
+            "0x2: reserved",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "后加热除霜按键请求信号Air_Conditioner_HeatRearWndSwReq ",
+        "参数": [
+            "0x0: No request",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "主驾设定温度Air_Conditioner_DriverTemperature_Set ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1~0x21: 17°-33°",
+            "0x22~0x3F: Reserved"
+        ]
+    },
+    {
+        "名称": "Signal_from_ESP_to_indicate_if_PATA_request_has_been_treatedESP_OffSts ",
+        "参数": [
+            "0x0: ESPOFF",
+            "0x1: ESPON"
+        ]
+    },
+    {
+        "名称": "The signal is indicates whether the EmergencyBrake is triggered or not.\nWhen a vehicle is equipped with the means to indicate emergency braking,activation and de-activation of the emergency braking signal shall meet the specifications on ECER13H 5.2.23.\n点亮双闪ABS_HazActive ",
+        "参数": [
+            "0x0: No intervention",
+            "0x1: Intervention"
+        ]
+    },
+    {
+        "名称": "碰撞输出信号\n碰撞信号定义为本报文唯一的事件触发信号,_当信号值为非0时，以20ms周期重复发送10次，之后周期恢复为100msACU_CrashOutputSt ",
+        "参数": [
+            "0x0: NoCrash",
+            "0x1: Front Crash",
+            "0x2: Side Crash",
+            "0x3: Front and Side Crash",
+            "0x4: Rear Crash",
+            "0x5: Front and rear Crash",
+            "0x6: Side and rear Crash",
+            "0x7: Front and Side and Rear Crash",
+            "0x8~0xFE: Reserved",
+            "0xFF: Invalid"
+        ]
+    },
+    {
+        "名称": "brake pedle status EMS_BrakePedleStatus ",
+        "参数": [
+            "0x0: Not pressed",
+            "0x1: Pressed",
+            "0x2: Reserved",
+            "0x3: Error"
+        ]
+    },
+    {
+        "名称": "engine running status EMS_EngineRunningStatue ",
+        "参数": [
+            "0x0: off",
+            "0x1: on",
+            "0x2: Cranking",
+            "0x3~0x6: Reserved",
+            "0x7: Fault"
+        ]
+    },
+    {
+        "名称": "Flag for Engine Oil PressureEMS_WarnOilPressure ",
+        "参数": [
+            "0x0: off",
+            "0x1: on"
+        ]
+    },
+    {
+        "名称": "自动启停功能指示灯状态EMS_ISSLampSts ",
+        "参数": [
+            "0x0: Off",
+            "0x1: On"
+        ]
+    },
+    {
+        "名称": "远程限制发动机转速反馈状态VCU_LimitSpeedFeedback ",
+        "参数": [
+            "0x0: Not Limited",
+            "0x1: Speed Limited（转速限制）"
+        ]
+    },
+    {
+        "名称": "EMS认证结果EMS_Release ",
+        "参数": [
+            "0x0: 上电默认状态（认证正在进行）-Default after power-on（authentication is been  processed）",
+            "0x1: 防盗认证失败-authenticationfailure",
+            "0x2: 防盗认证成功-authentication success",
+            "0x3: 保留-reserved"
+        ]
+    },
+    {
+        "名称": "EPBSystemStatusESP_EPBSystemStatus ",
+        "参数": [
+            "0x0: not initialized,",
+            "0x1: brake released,",
+            "0x2: brake applied,",
+            "0x3: brake applying,",
+            "0x4: brake releasing"
+        ]
+    },
+    {
+        "名称": "The signal is indicates 3 working status:\n1)OFF means HDC Off\n2)standby means HDC is On, but not active braking\n3)active means HDC is On and active brakingESP_HDCStatus ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: standby",
+            "0x2: active",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "no brake pressure applied; generally it regards wheel cylinder presure.\n制动灯点亮ESP_BLRequestController ",
+        "参数": [
+            "0x0: Exist brake force",
+            "0x1: No brake force"
+        ]
+    },
+    {
+        "名称": "Indication of CCO interventionESP_CCO_ACTIVE ",
+        "参数": [
+            "0x0: Not active",
+            "0x1: Active"
+        ]
+    },
+    {
+        "名称": "TAB control status\nTAB控制状态信号ESP_TABSts ",
+        "参数": [
+            "0x0: Fuction OFF",
+            "0x1: Standby",
+            "0x2: Active",
+            "0x3: Failure"
+        ]
+    },
+    {
+        "名称": "ESP send the ack of the driver mode request signalESP_DrivingModeDis ",
+        "参数": [
+            "0x0: normal mode",
+            "0x1: sport mode",
+            "0x2: economy mode",
+            "0x3: winter mode",
+            "0x4: sand mode",
+            "0x5: mud mode",
+            "0x6: rock mode",
+            "0x7: 4L mode",
+            "0x8~0xE: Reserved",
+            "0xF: Invalid"
+        ]
+    },
+    {
+        "名称": "雨量感应天窗车窗设置（设置开启关闭）HU_RainCtrlSunRoofWinSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "遥控钥匙解锁模式设置HU_RKEUnlockDoorTypeSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: Unlock four door",
+            "0x2: Unlock Driver door",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "伴我回家灯光设置信号HU_FollowMeHomeLightSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: OFF",
+            "0x2: 15 s",
+            "0x3: 30 s",
+            "0x4: 60 s",
+            "0x5~0x6: Reserved",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "闭锁关车窗天窗设置HU_LockAutoClsWinSunroofSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "迎宾灯开关设置HU_BreathingLightSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "后除霜模式设定请求信号HU_RearDefReq ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: OFF",
+            "0x2: ON",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "主驾座椅状态HU_DrvSeat ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: 加热Level 1",
+            "0x2: 加热Level 2",
+            "0x3: 加热Level 3",
+            "0x4: 通风Level 1",
+            "0x5: 通风Level 2",
+            "0x6: 通风Level 3",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "副驾座椅状态HU_PassSeat ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: 加热Level 1",
+            "0x2: 加热Level 2",
+            "0x3: 加热Level 3",
+            "0x4: 通风Level 1",
+            "0x5: 通风Level 2",
+            "0x6: 通风Level 3",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "PAS Work Status\nPAS工作状态PAS_WorkSts ",
+        "参数": [
+            "0x0: PAS Off",
+            "0x1: PAS On",
+            "0x2: Reserved",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "锁车外视镜自动折叠设置HU_MirrorAutoFoldSet ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "颜色信号TheaterDimmingColor ",
+        "参数": [
+            "0x0: invalid",
+            "0x1~0x40: 1号颜色~64号颜色",
+            "0x41~0xFF: Reserved"
+        ]
+    },
+    {
+        "名称": "亮度信号TheaterDimmingBrightness ",
+        "参数": [
+            "0x0: 亮度等级1",
+            "0x1: 亮度等级2",
+            "0x2: 亮度等级3",
+            "0x3: 亮度等级4",
+            "0x4: 亮度等级5",
+            "0x5: invalid",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "点线光源开启关闭信号ALC_Switch ",
+        "参数": [
+            "0x0: OFF",
+            "0x1: ON"
+        ]
+    },
+    {
+        "名称": "功能效果模式（越野版）SetTDLStatus_Mode_Offroad ",
+        "参数": [
+            "0x0: 关闭",
+            "0x1: 律动",
+            "0x2: 运动",
+            "0x3: 节奏",
+            "0x4: 流光",
+            "0x5: 动感",
+            "0x6: invalid",
+            "0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "功能效果模式（乘用版）SetTDLStatus_Mode_Passenger ",
+        "参数": [
+            "0x0: 固定",
+            "0x1: 呼吸",
+            "0x2: 循环",
+            "0x3: 关联",
+            "0x4: invalid",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "调光速度等级（乘用版）FlashingSpeedLevel ",
+        "参数": [
+            "0x0: 速度等级1",
+            "0x1: 速度等级2",
+            "0x2: 速度等级3",
+            "0x3: 速度等级4",
+            "0x4: 速度等级5",
+            "0x5: invalid",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "音乐频率为120HZ的响度信号MusicLoudness_120HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为250HZ的响度信号MusicLoudness_250HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为500HZ的响度信号MusicLoudness_500HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为1000HZ的响度信号MusicLoudness_1000HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为1500HZ的响度信号MusicLoudness_1500HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为2000HZ的响度信号MusicLoudness_2000HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "音乐频率为6000HZ的响度信号MusicLoudness_6000HZ ",
+        "参数": [
+            "0x0: invalid",
+            "0x1: 响度等级1",
+            "0x2: 响度等级2",
+            "0x3: 响度等级3",
+            "0x4: 响度等级4",
+            "0x5: 响度等级5",
+            "0x6: 响度等级6",
+            "0x7: 响度等级7",
+            "0x8: 响度等级8",
+            "0x9: 响度等级9",
+            "0xA: 响度等级10",
+            "0xB: 响度等级11",
+            "0xC: 响度等级12",
+            "0xD: 响度等级13",
+            "0xE: 响度等级14",
+            "0xF: 响度等级15"
+        ]
+    },
+    {
+        "名称": "语音主驾车窗控制HU_DriverWindowCommand ",
+        "参数": [
+            "0x0: No Req；",
+            "0x1: On；",
+            "0x2: Off；",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "语音副驾车窗控制HU_PassengerWindowCommand ",
+        "参数": [
+            "0x0: No Req；",
+            "0x1: On；",
+            "0x2: Off；",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "语音左后车窗控制HU_LeftRearWindowCommand ",
+        "参数": [
+            "0x0: No Req；",
+            "0x1: On；",
+            "0x2: Off；",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "语音右后车窗控制HU_RightRearWindowCommand ",
+        "参数": [
+            "0x0: No Req；",
+            "0x1: On；",
+            "0x2: Off；",
+            "0x3: invalid"
+        ]
+    },
+    {
+        "名称": "语音所有车窗控制HU_AllWindowCommand ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: On",
+            "0x2: Off",
+            "0x3: Ventilation mode（透气模式）",
+            "0x4~0x6: Reserved",
+            "0x7: invalid"
+        ]
+    },
+    {
+        "名称": "语音控制天窗HU_RoofControlCommand ",
+        "参数": [
+            "0x0: No Req",
+            "0x1: RoofClose",
+            "0x2: RoofOpen",
+            "0x3: RoofRise",
+            "0x4~0x6: Reserved",
+            "0x7: invalid"
+        ]
+    },
+    {
+        "名称": "Intelligent Headlight Control\nIHC(远光自动控制)工作状态ADAS_IHCSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active"
+        ]
+    },
+    {
+        "名称": "IHC远光请求状态ADAS_IHCHighLightReq ",
+        "参数": [
+            "0x0: On",
+            "0x1: Off"
+        ]
+    },
+    {
+        "名称": "水温高状态信号IP_EngineCoolanTemperatureHigh ",
+        "参数": [
+            "0x0: normal",
+            "0x1: high"
+        ]
+    },
+    {
+        "名称": "燃油低信号IP_FuelLow ",
+        "参数": [
+            "0x0: normal",
+            "0x1: low"
+        ]
+    },
+    {
+        "名称": "油量信息有效IP_FuelLeftoverVD ",
+        "参数": [
+            "0x0: Valid",
+            "0x1: Invalid"
+        ]
+    },
+    {
+        "名称": "里程备份使能标识（IP每次IGN ON时执行总里程有效检查，确认里程有效设置改位；IP在IGN OFF时清除该位）IP_OdometerBackup ",
+        "参数": [
+            "0x0: Disable",
+            "0x1: Enable"
+        ]
+    },
+    {
+        "名称": "Total Odometer sts\n累计里程有效标志位IP_OdometerSts ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1: Valid"
+        ]
+    },
+    {
+        "名称": "This signal shows the direction of steering wheel angle, it's used in pairs with 'SteeringWAngle'. SAS_SteeringWAngleSign ",
+        "参数": [
+            "0x0: Left",
+            "0x1: Right"
+        ]
+    },
+    {
+        "名称": "The signal indicates the status of SAS. SAS_St ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1: Valid"
+        ]
+    },
+    {
+        "名称": "BSD左侧报警状态SRR_BSDLeftWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "BSD左侧系统状态SRR_BSDLeftSystemSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "RCTA左侧报警状态SRR_RCTALeftWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Warning",
+            "0x2~0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "RCTA左侧系统状态SRR_RCTALeftSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW左侧前门报警状态SRR_DOWLeftFrontWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW左侧前门系统状态SRR_DOWLeftFrontSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW左侧后门报警状态SRR_DOWLeftBackWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW左侧后门系统状态SRR_DOWLeftBackSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "RCW报警状态SRR_RCWWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 warning",
+            "0x2: Level2 warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "RCW系统状态SRR_RCWSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "BSD右侧报警状态SRR_BSDRightWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "BSD右侧系统状态SRR_BSDRightSystemSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "RCTA右侧报警状态SRR_RCTARightWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Warning",
+            "0x2~0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "RCTA右侧系统状态SRR_RCTARightSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW右侧前门报警状态SRR_DOWRightFrontWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW右侧前门系统状态SRR_DOWRightFrontSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW右侧后门报警状态SRR_DOWRightBackWarnSts ",
+        "参数": [
+            "0x0: Normal",
+            "0x1: Level1 Warning",
+            "0x2: Level2 Warning",
+            "0x3: Reserved"
+        ]
+    },
+    {
+        "名称": "DOW右侧后门系统状态SRR_DOWRightBackSts ",
+        "参数": [
+            "0x0: Unavailable state",
+            "0x1: Off",
+            "0x2: Standby",
+            "0x3: Active(Normal)",
+            "0x4: Active(Warning)",
+            "0x5~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "TBOX认证状态TBOX_AuthStatus ",
+        "参数": [
+            "0x0: TBOX认证成功（TBOX validation success）",
+            "0xF5: Busy，TBOX正在计算Response （TBOX is processing the encryption）",
+            "0xFF: TBOX 初始化状态（未通过 EOL 写入 SK或常量码）（BCM initialization status）"
+        ]
+    },
+    {
+        "名称": "远程解闭锁TBOX_LockCommand ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Remote Lock",
+            "0x2: Remote Unlock",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "禁止/恢复发动机启动TBOX_EngineStartupInhibit ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Inhibit Enginie Start",
+            "0x2: Permit Enginie Start",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程启动/停止发动机请求TBOX_RemoteEngineStartupReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Enginie Start",
+            "0x2: Enginie Stop",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程上/下电请求TBOX_RemoteIGNOnOffReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: ON",
+            "0x2: OFF",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "远程启动运行时间TBOX_RemoteStartRunTime ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: 10min",
+            "0x2: 15min",
+            "0x3: 20min",
+            "0x4: 25min",
+            "0x5: 30min",
+            "0x6~0x7: Reserved"
+        ]
+    },
+    {
+        "名称": "远程寻车TBOX_SearchCarReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Light",
+            "0x2: Horn",
+            "0x3: Light And Horn"
+        ]
+    },
+    {
+        "名称": "远程遥控天窗请求TBOX_RemoteSunroofSignalReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Remote Close",
+            "0x2: Remote Open",
+            "0x3: Remote Rise"
+        ]
+    },
+    {
+        "名称": "远程遥控车窗要求TBOX_RemoteWindowSignalReq ",
+        "参数": [
+            "0x0: No Request",
+            "0x1: Remote Close",
+            "0x2: Remote Open",
+            "0x3: Invalid"
+        ]
+    },
+    {
+        "名称": "Transmission gear selector lever position.\n换挡杆位置TCU_TGSLever ",
+        "参数": [
+            "0x0: Undefined",
+            "0x1: P",
+            "0x2: R",
+            "0x3: N",
+            "0x4: D",
+            "0x5: M",
+            "0x6: S(重庆运动模式)",
+            "0x7: Invalid"
+        ]
+    },
+    {
+        "名称": "Transmission gear selector lever position signal valid换挡杆位置信号有效TCU_TGLeverValid ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1: Valid"
+        ]
+    },
+    {
+        "名称": "TCU failure lamp turn on requestTCU故障灯开启请求TCU_St_Fault ",
+        "参数": [
+            "0x0: no failure",
+            "0x1: failure",
+            "0x2: failure（limp home activated）"
+        ]
+    },
+    {
+        "名称": "VSO statusESP_VehicleSpeedValid ",
+        "参数": [
+            "0x0: Invalid",
+            "0x1: Valid"
+        ]
+    },
+    {
+        "名称": "The signal indicate qualifier for Ambient temperatureEMS_AmbientTemp_Qualifier ",
+        "参数": [
+            "0x0: NotInitialzed",
+            "0x1: Normal",
+            "0x2: Faulty"
+        ]
+    },
+    {
+        "名称": "Mil fault lamp on/off signal ---\nMil故障灯开/关信号EMS_MIL_LampSignal ",
+        "参数": [
+            "0x0: Lamp Off",
+            "0x1: Lamp On"
+        ]
+    }
+]
